@@ -1,0 +1,25 @@
+﻿@using EmployeewithEmpty.Models;
+@model IEnumerable<tbl_Employee>
+<h2>Index</h2>
+
+
+<table>
+    <tr>
+    <td>Name</td>
+    <td>Location</td>
+    <td>Manager<td>
+    <td>DeptName</td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Location</td>
+            <td>@item.Manager
+            <td>
+            <td>@item.DeptName</td>
+        </tr>
+    }
+
+</table>
